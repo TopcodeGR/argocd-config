@@ -8,7 +8,7 @@ metadata:
     kubernetes.io/ingress.global-static-ip-name: topcode-ip
 spec:
   tls:
-    - secretName: secret-topcode-gr
+  - secretName: secret-topcode-gr
   rules:
   - host: argocd.topcode.gr
     http:
