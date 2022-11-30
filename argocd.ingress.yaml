@@ -7,10 +7,6 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     kubernetes.io/tls-acme: "true"
     kubernetes.io/ingress.global-static-ip-name: "topcode-ip"
-    # If you encounter a redirect loop or are getting a 307 response code
-    # then you need to force the nginx ingress to connect to the backend using HTTPS.
-    #
-    nginx.ingress.kubernetes.io/backend-protocol: "HTTPS"
 spec:
   rules:
   - host: argocd.topcode.gr
