@@ -6,12 +6,12 @@ metadata:
   annotations:
     networking.gke.io/v1beta1.FrontendConfig: argocd-frontend-config
     kubernetes.io/ingress.global-static-ip-name: topcode-ip
-    cert-manager.io/issuer: letsencrypt-staging
+    cert-manager.io/issuer: letsencrypt-production
 spec:
   tls:
   - secretName: web-ssl
     hosts:
-    - argoce.topcode.gr
+    - argocd.topcode.gr
   rules:
   - host: argocd.topcode.gr
     http:
