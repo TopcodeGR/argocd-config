@@ -10,7 +10,7 @@ spec:
   tls:
     - secretName: secret-topcode-gr
   rules:
-    - host: argocd.topcode.gr
+  - host: argocd.topcode.gr
     http:
       paths:
       - pathType: Prefix
