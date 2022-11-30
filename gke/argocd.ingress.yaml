@@ -12,11 +12,11 @@ spec:
   rules:
     - host: argocd.topcode.gr
     http:
-    paths:
-      - pathType: Prefix
-        path: "/"
-        backend:
-          service:
-            name: argocd-server
-            port:
-              number: 80
+      paths:
+        - pathType: Prefix
+          path: "/"
+          backend:
+            service:
+              name: argocd-server
+              port:
+                number: 80
