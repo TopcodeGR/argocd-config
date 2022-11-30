@@ -6,7 +6,7 @@ metadata:
   annotations:
     networking.gke.io/v1beta1.FrontendConfig: argocd-frontend-config
     kubernetes.io/ingress.global-static-ip-name: topcode-ip
-    cert-manager.io/issuer: letsencrypt-production
+    cert-manager.io/cluster-issuer: letsencrypt-production
 spec:
   tls:
   - secretName: web-ssl
