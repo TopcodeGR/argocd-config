@@ -9,7 +9,9 @@ metadata:
     cert-manager.io/issuer: letsencrypt-staging
 spec:
   tls:
-  - secretName: secret-topcode-gr
+  - secretName: web-ssl
+    hosts:
+    - argoce.topcode.gr
   rules:
   - host: argocd.topcode.gr
     http:
