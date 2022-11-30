@@ -5,11 +5,12 @@ metadata:
   namespace: argocd
   annotations:
     networking.gke.io/v1beta1.FrontendConfig: argocd-frontend-config
+    kubernetes.io/ingress.global-static-ip-name: topcode-ip
 spec:
   tls:
     - secretName: secret-topcode-gr
   rules:
-    - host: argocd.apps.topcode.gr
+    - host: argocd.topcode.gr
     http:
       paths:
       - pathType: Prefix
