@@ -9,7 +9,7 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt-production
 spec:
   tls:
-  - secretName: web-ssl
+  - secretName: web-ssl-z5nrm
     hosts:
     - argocd.topcode.gr
   rules:
